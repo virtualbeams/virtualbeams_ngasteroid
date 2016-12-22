@@ -279,6 +279,16 @@ undefined.
 
 ---
 
+###stopOnlySubscription
+
+Stop only subscription.
+
+**Return**
+
+boolean.
+
+---
+
 ###vbaUtils
 
 ---

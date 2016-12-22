@@ -347,6 +347,23 @@ angular.module('virtualbeamsAsteroid', [])
         }
       };
 
+      self.stopOnlySubscription = function (nameSubscribe) {
+        if (queries[nameSubscribe]) {
+          for (var j = 0; j < queries[nameSubscribe]._events.change.length; j++) {
+            queries[nameSubscribe].off('change', queries[nameSubscribe]._events.change[j]);
+          }
+
+          var sub = self.getSubscription({nameSubscribe: nameSubscribe});
+
+          if (sub) {
+            delete queries[nameSubscribe];
+            return true;
+          } else {
+            return false;
+          }
+        }
+      };
+
       self.login = function (config) {
         var defered = $q.defer();
         var promise = this.get().loginWithPassword(config.usernameOrEmail, config.password, config.data);
