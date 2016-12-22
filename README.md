@@ -283,6 +283,10 @@ undefined.
 
 Stop only subscription.
 
+**Arguments**
+
+* `nameSubscription` **String** *required*.
+
 **Return**
 
 boolean.
