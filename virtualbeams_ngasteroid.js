@@ -347,15 +347,26 @@ angular.module('virtualbeamsAsteroid', [])
         }
       };
 
-      self.stopOnlySubscription = function (nameSubscribe) {
+      self.stopOnlySubscription = function(nameSubscribe) {
         if (queries[nameSubscribe]) {
           for (var j = 0; j < queries[nameSubscribe]._events.change.length; j++) {
             queries[nameSubscribe].off('change', queries[nameSubscribe]._events.change[j]);
           }
 
-          var sub = self.getSubscription({nameSubscribe: nameSubscribe});
+          var sub = self.getSubscription({
+            nameSubscribe: nameSubscribe
+          });
 
           if (sub) {
+            var sub = self.getSubscription({
+              nameSubscribe: nameSubscribe
+            });
+
+            if (sub) {
+              vbaUtils.log(nameSubscribe, 'subscription stoped');
+              sub.stop();
+            }
+
             delete queries[nameSubscribe];
             return true;
           } else {
