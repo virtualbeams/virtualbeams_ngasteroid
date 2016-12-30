@@ -1,7 +1,7 @@
 {
   "name": "virtualbeams-ngasteroid",
   "description": "An implementation of asteroid with angular",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "homepage": "https://github.com/virtualbeams/virtualbeams_ngasteroid.git",
   "authors": [
     "Juan Pablo Lopera <jpablo.Lopera@gvirtualbeams.com>",
