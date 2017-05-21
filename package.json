@@ -1,0 +1,32 @@
+{
+  "name": "virtualbeams-ngasteroid",
+  "version": "1.3.3",
+  "description": "An implementation of Asteroid with Angular.",
+  "main": "virtualbeams_ngasteroid.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virtualbeams/virtualbeams_ngasteroid.git"
+  },
+  "contributors": [
+    {
+      "name": "Juan Pablo Lopera",
+      "email": "jpablo.Lopera@virtualbeams.com>"
+    },
+    {
+      "name": "Sebastian Pernett Plaza",
+      "email": "jpablo.Lopera@virtualbeams.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/virtualbeams/virtualbeams_ngasteroid/issues"
+  },
+  "homepage": "https://github.com/virtualbeams/virtualbeams_ngasteroid#readme",
+  "dependencies": {
+    "angular": "^1.3.0",
+    "asteroid": "^0.6.1"
+  }
+}
